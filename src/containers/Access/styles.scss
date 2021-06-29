@@ -1,0 +1,51 @@
+.access-container{
+  width: 100%;
+  height: 100vh;
+
+  .pass-indicator {
+    margin-top: 3rem;
+
+    & > div{
+    border: solid 1px var(--primary);
+    border-radius: 5rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem;
+
+      &.active{
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  .numpad{
+    width: 80%;
+    max-width: 40rem;
+    margin-top: 3rem;
+    
+
+    & > button{
+      padding: 2.5rem;
+      background-color: var(--primary);
+      color: #ffffff;
+      width: calc(33% - .4rem);
+      margin: .2rem; 
+      border-radius: .5rem;
+    }
+
+  }
+
+  .shake{
+    animation-name: shake;
+    -webkit-animation-duration: .5s; 
+    animation-duration:  .5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both;
+  }
+  @keyframes shake {
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+  } 
+}
+

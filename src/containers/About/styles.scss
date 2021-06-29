@@ -1,0 +1,36 @@
+.about-container{
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+
+  .me-image{
+    height: 40rem;
+    width: 100%;
+    filter: grayscale(100%);
+  }
+  .me-name{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000000;
+  }
+  .me-desc{
+    font-style: italic;
+    line-height: 2;
+    font-size: 1.4rem;
+  }
+  .info-title{
+    min-width: 9rem;
+    color: #000000;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .button{
+    background-color: #000000;
+    padding: 1rem 2rem;
+    span{
+      color: #ffffff !important;
+    }
+  }
+}
