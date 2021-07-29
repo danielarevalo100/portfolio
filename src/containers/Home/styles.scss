@@ -15,6 +15,12 @@
     border: 1rem solid rgba(118, 118, 118, 0.5);
   }
 }
+@media (max-width: 1024px){
+  .home-container{
+    display: block!important;
+    margin: 10%;
+  }
+}
 
 @keyframes animation{
   0% {

@@ -15,16 +15,16 @@ const News = () => {
         <span style={{ fontSize: '3rem', color: '#000000', fontWeight: '700' }}>Latest news</span>
       </Div>
       <Div className='w-100' row wrap justify='space-between' data-aos='zoom-in'>
-        <Div style={{ width: '50%', padding: '2rem' }}>
+        <Div className='news-article'>
           <Card/>
         </Div>
-        <Div style={{ width: '50%', padding: '2rem' }}>
+        <Div className='news-article'>
           <Card/>
         </Div>
-        <Div style={{ width: '50%', padding: '2rem' }}>
+        <Div className='news-article'>
           <Card/>
         </Div>
-        <Div style={{ width: '50%', padding: '2rem' }}>
+        <Div className='news-article'>
           <Card/>
         </Div>
       </Div>

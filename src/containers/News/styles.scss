@@ -5,7 +5,13 @@
   padding-top: 10rem;
   padding-bottom: 4.5rem;
   align-items: flex-start !important;
-
 }
-
-
+.news-article{
+  width: 50%;
+  padding: 2rem;
+}
+@media (max-width: 1024px){
+  .news-article{
+    width: 100%;
+  }
+}

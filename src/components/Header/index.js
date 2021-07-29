@@ -18,11 +18,11 @@ const routes = [
 const Header = (props) => {
   return (
     <Div className='header-container' >
-      <Div style={{ width: '25rem' }} align='start' data-aos='fade-right'>
+      <Div className='header-mobile' style={{ width: '25rem' }} align='start' data-aos='fade-right'>
         <Div className='mb-3'>
           <h1>DEAS</h1>
         </Div>
-        <Div className='nav mb-3' align='start'>
+        <Div className='nav mb-3 nav-mobile' align='start'>
           {routes.map( ({ path, title }) => (<span style={{ color: props.location.pathname == path && '#000000' || '' }} onClick={() => props.history.push(path)} key={path} className='menu-item mb-2'>{title}</span>) )}
         </Div>
         <Div className='' align='start' >

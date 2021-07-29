@@ -2,6 +2,7 @@
   width: 80%;
   max-width: 1200px;
   height: 100%;
+  margin-top: 10rem;
 
   .me-image{
     height: 40rem;
@@ -34,3 +35,16 @@
     }
   }
 }
+
+@media (max-width: 1024px){
+  .about-mobile{
+    flex-flow: column nowrap!important;
+  }
+  .dveloper-mobile{
+    width: 100%!important;
+    margin-bottom: 20px;
+  }
+  .button{
+    padding: 2rem 4rem!important;
+  }
+} 
