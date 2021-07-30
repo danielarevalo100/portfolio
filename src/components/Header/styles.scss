@@ -31,9 +31,13 @@
     height: auto!important;
   }
   .header-mobile{
-    align-items: center!important;
+    display: flex!important;
+    justify-content: space-between!important;
+    align-items: flex-start!important;
+    flex-flow: column nowrap!important;
     flex-direction: row!important;
     flex-wrap: wrap!important;
+    margin-top: 3rem;
   }
   .nav-mobile{
     display: flex!important;

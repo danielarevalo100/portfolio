@@ -8,6 +8,9 @@ import Div from 'components/Div';
 /* styles */
 import './styles.scss'
 
+/* Icons */
+import MenuIcon from '@material-ui/icons/Menu';
+
 const menu = ['Home', 'About', 'Portfolio', 'News', 'Contact'];
 
 const routes = [
@@ -26,11 +29,11 @@ const Header = (props) => {
   return (
     <Div className='header-container' >
       {!isMobile && (
-        <Div className='header-mobile' style={{ width: '25rem' }} align='start' data-aos='fade-right'>
+        <Div style={{ width: '25rem' }} align='start' data-aos='fade-right'>
           <Div className='mb-3'>
             <h1>DEAS</h1>
           </Div>
-          <Div className='nav mb-3 nav-mobile' align='start'>
+          <Div className='nav mb-3' align='start'>
             {routes.map( ({ path, title }) => (<span style={{ color: props.location.pathname == path && '#000000' || '' }} onClick={() => props.history.push(path)} key={path} className='menu-item mb-2'>{title}</span>) )}
           </Div>
           <Div className='' align='start' >
@@ -39,13 +42,14 @@ const Header = (props) => {
           </Div>
         </Div>
       ) || (
-        <Div>
-          <Div onClick={() => setShowMenu(!showMenu)} className='mb-3'>
+        <Div className='header-mobile'>
+          <Div className='mb-3'>
             <h1>DEAS</h1>
           </Div>
-          <Div style={{ width: '100%' }}>
+          <MenuIcon style={{ fontSize: 50 }} onClick={() => setShowMenu(!showMenu)}/>
+          <Div  style={{ width: '100%' }}>
             <Collapse in={showMenu}>
-              <Div column>
+              <Div className='nav-mobile'>
                 {routes.map( ({ path, title }) => (<span style={{ color: props.location.pathname == path && '#000000' || '' }} onClick={() => props.history.push(path)} key={path} className='menu-item mb-2'>{title}</span>) )}
               </Div>
             </Collapse>
