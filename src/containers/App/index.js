@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 /* components */
 import Div from 'components/Div';
 import Header from 'components/Header';
+import Article from 'components/Article';
+import LearnMore from 'components/LearnMore';
 
 /* conatiners */
 import Home from 'containers/Home';
@@ -39,6 +41,7 @@ const App = (props) => {
           </Switch>
         </Div>
       </Router>
+      <LearnMore/>
     </Div>
   )
 
