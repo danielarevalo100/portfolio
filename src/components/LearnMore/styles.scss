@@ -7,6 +7,10 @@
     height: 100%;
     z-index: 15;
     background-color: rgba(0,0,0,.8);
+    transition: 0.2s;
+    &.hidden {
+      transform: scale(0)
+    }
 }
 .article-content{
     display: flex;

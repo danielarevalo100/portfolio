@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 /* components */
 import Div from 'components/Div';
 import Header from 'components/Header';
-import Article from 'components/Article';
 import LearnMore from 'components/LearnMore';
 
 /* conatiners */
@@ -12,6 +11,9 @@ import Home from 'containers/Home';
 import About from 'containers/About';
 import News from 'containers/News';
 import Contact from 'containers/Contact';
+
+/* managers */
+import Notifications from 'managers/Notifications';
 
 /* styles */
 import './styles.scss';
@@ -31,6 +33,15 @@ const routes = [
 
 const App = (props) => {
 
+  const [modal, setModal] = useState('')
+
+  useEffect(() => {
+    Notifications.listen('SHOW_MODAL', ({ detail }) => {
+      console.log(detail)
+      setModal(detail.modal)
+    })
+  })
+
   return(
     <Div className='app-container' row style={{ height: window.innerHeight+'px' }}>
       <Router>
@@ -41,7 +52,7 @@ const App = (props) => {
           </Switch>
         </Div>
       </Router>
-      <LearnMore/>
+      {modal == 'learnMore' && <LearnMore onClose={() => setModal('')}/>}
     </Div>
   )
 
