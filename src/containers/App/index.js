@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Div from 'components/Div';
 import Header from 'components/Header';
 import LearnMore from 'components/LearnMore';
+import Article from 'components/Article';
 
 /* conatiners */
 import Home from 'containers/Home';
@@ -53,6 +54,7 @@ const App = (props) => {
         </Div>
       </Router>
       {modal == 'learnMore' && <LearnMore onClose={() => setModal('')}/>}
+      {modal == 'article' && <Article onClose={() => setModal('')}/>}
     </Div>
   )
 

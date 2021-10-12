@@ -10,6 +10,7 @@
 }
 .article-content{
     display: flex;
+    justify-content: flex-start!important;
     position: absolute;
     overflow: auto;
     width: 75vw;
@@ -19,21 +20,5 @@
     align-items: center;
 }
 .art-img{
-    margin-top: 80%;
     margin-bottom: 20px;
-}
-@media (max-width: 767px){ 
-    .h-article{
-        height: 100px;
-    }
-}
-/*@media (min-width: 720px){
-    .art-img{
-        margin-top: 40%;
-    }
-}*/
-@media (min-width: 1440px){
-    .art-img{
-        margin-top: 20%;
-    }
 }
