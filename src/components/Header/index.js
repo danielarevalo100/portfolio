@@ -16,7 +16,7 @@ const menu = ['Home', 'About', 'Portfolio', 'News', 'Contact'];
 const routes = [
   { path: '/', title: 'Home' },
   { path: '/about', title: 'About' },
-  { path: '/news', title: 'News' },
+  { path: '/portafolio', title: 'Portafolio' },
   { path: '/contact', title: 'Contact' },
 ]
 

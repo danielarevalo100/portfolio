@@ -22,7 +22,7 @@ const About = (props) => {
       </Div>
       <Div className='w-100 about-mobile' row align='flex-start' justify='space-between' data-aos='fade-up'>
         <Div style={{ width: '45%' }} className='dveloper-mobile' align='start'>
-          <span className='me-desc mb-2' >Hello, I am a creative photographer based in New York and happy to travel all over Europe to capture your big day in candid and authentic photos. I will create a lasting memory of the people.</span>
+          <span className='me-desc mb-2' >I am a Web Developer, creator, and collaborator of web solutions. Among my personal strengths, it is to be attentive, methodical, responsible, respectful, and committed to my work. I consider myself as a person who is always looking for tools and learning new technologies. I have the ability to lead and to work under pressure and in a team. My experience as web developer has focused on web technologies.</span>
           <Div style={{ cursor: 'pointer' }} onClick={() => Notifications.post('SHOW_MODAL', { modal: 'learnMore' })} className='button'><span>Learn More</span></Div>
         </Div>
         <Div style={{ width: '40%' }}>

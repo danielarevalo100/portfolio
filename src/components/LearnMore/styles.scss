@@ -1,4 +1,4 @@
-.article-container{
+.lrnmore-container{
     position: fixed;
     top: 0px;
     left: 0px;
@@ -12,8 +12,9 @@
       transform: scale(0)
     }
 }
-.article-content{
+.lrmore-content{
     display: flex;
+    justify-content: flex-start!important;
     position: absolute;
     overflow: auto;
     width: 75vw;
@@ -33,6 +34,11 @@
     width: 100%;
     margin-bottom: 17px;
     flex-direction: row!important;
+}
+@media (max-width: 765px){
+    .skills{
+        flex-wrap: wrap!important;
+    }
 }
 .skills span{
     margin: 0px 0px 5px 0px;

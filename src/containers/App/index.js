@@ -28,7 +28,7 @@ const PrivateRoute = ({ auth, component: Component, ...rest }) => {
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
-  { path: '/news', component: News },
+  { path: '/portafolio', component: News },
   { path: '/contact', component: Contact },
 ]
 
